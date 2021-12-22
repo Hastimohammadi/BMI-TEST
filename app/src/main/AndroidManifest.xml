@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.schoolproject">
+    package="com.example.schoolproject" >
 
     <application
         android:allowBackup="true"
@@ -8,25 +8,13 @@
         android:label="BMI TEST"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SchoolProject">
+        android:theme="@style/Theme.SchoolProject" >
         <activity
-            android:name=".m"
-            android:exported="false" />
-        <activity
-            android:name=".test"
+            android:name=".HomeActivity"
             android:exported="false" />
         <activity
             android:name=".BMIActivity"
             android:exported="false" />
-        <activity
-            android:name=".First_page"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>

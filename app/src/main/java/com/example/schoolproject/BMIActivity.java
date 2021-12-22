@@ -17,7 +17,7 @@ public class BMIActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pageseconde);
+        setContentView(R.layout.activity_bmi);
 
         ediTextHeight = findViewById(R.id.edittext_height);
         ediTextWeight = findViewById(R.id.edittext_weight);
