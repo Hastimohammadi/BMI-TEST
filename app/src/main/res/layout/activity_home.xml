@@ -1,69 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/yellow"
-    >
-
+    android:background="@color/yellow">
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="345dp"
-        android:layout_height="281dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/image_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_logo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.031"
-        android:src="@drawable/pic_page_first" />
-
-
-
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="398dp"
-        android:layout_height="151dp"
-        android:layout_marginTop="312dp"
+        android:id="@+id/textview_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/button_margin"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="@dimen/button_margin"
+        android:fontFamily="@font/roboto_extra_bold"
         android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/image_logo"
         android:text="@string/are_you_ready_for_bmi_test"
         android:textColor="@color/black"
-        android:textSize="35sp"
-        android:fontFamily="@font/roboto_black"
-        android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="6dp"
-        tools:ignore="MissingConstraints" />
-
+        android:textSize="@dimen/text_large_size"
+        android:textStyle="bold"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="284dp"
-        android:layout_height="51dp"
+        android:id="@+id/button_ready"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/button_margin"
+        android:layout_marginEnd="@dimen/button_margin"
         android:background="@drawable/shape_two"
         android:fontFamily="@font/roboto_extra_bold"
         android:gravity="center"
-        android:text="@string/no_thanks"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="565dp" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="284dp"
-        android:layout_height="51dp"
-        android:background="@drawable/shape_one"
-        android:fontFamily="@font/roboto_extra_bold"
-        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:padding="@dimen/padding"
         android:text="@string/yes_i_am_ready"
         android:textColor="@color/black"
-        android:textSize="25sp"
+        android:textSize="@dimen/text_large_size"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="633dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_title" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/button_margin"
+        android:layout_marginTop="@dimen/button_margin"
+        android:layout_marginEnd="@dimen/button_margin"
+        android:background="@drawable/shape_two"
+        android:fontFamily="@font/roboto_extra_bold"
+        android:gravity="center"
+        android:padding="@dimen/padding"
+        android:text="@string/no_thanks"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_large_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_ready" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,12 +1,12 @@
 package com.hastmohamadi.bmiTest;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -31,11 +31,11 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 finish();
                 break;
             case R.id.button_ready:
-                Intent bmiIntent= new Intent(MainActivity.this, BMIActivity.class);
+                Intent bmiIntent = new Intent(HomeActivity.this, BMIActivity.class);
                 startActivity(bmiIntent);
                 break;
             default:
-                Toast.makeText(MainActivity.this, "NO OPTIONS!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(HomeActivity.this, "NO OPTIONS!", Toast.LENGTH_SHORT).show();
         }
     }
 }

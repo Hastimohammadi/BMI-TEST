@@ -6,6 +6,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatEditText;
+import androidx.appcompat.widget.AppCompatImageView;
 import androidx.appcompat.widget.AppCompatTextView;
 
 public class BMIActivity extends AppCompatActivity {
@@ -13,6 +14,7 @@ public class BMIActivity extends AppCompatActivity {
     private AppCompatEditText ediTextHeight, ediTextWeight;
     private AppCompatButton buttonCalculate;
     private AppCompatTextView textViewResult, textViewNote;
+    private AppCompatImageView imageResult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,12 +26,13 @@ public class BMIActivity extends AppCompatActivity {
         buttonCalculate = findViewById(R.id.button_calculate_bmi);
         textViewResult = findViewById(R.id.textview_result);
         textViewNote = findViewById(R.id.textview_note);
+        imageResult = findViewById(R.id.image_result);
 
         buttonCalculate.setOnClickListener(view -> {
             if (ediTextWeight.length() == 0 || ediTextHeight.length() == 0) {
-                Toast.makeText(BMIActivity.this, "Populate Weight and Height to Calculate BMI", Toast.LENGTH_SHORT).show();
+                Toast.makeText(BMIActivity.this, getString(R.string.populate_feilds), Toast.LENGTH_SHORT).show();
             } else {
-                double heightInCms = Double.parseDouble(ediTextHeight.getText().toString()) /100;
+                double heightInCms = Double.parseDouble(ediTextHeight.getText().toString()) / 100;
                 double weightInKgs = Double.parseDouble(ediTextWeight.getText().toString());
                 double result = weightInKgs / (heightInCms * heightInCms);
                 textViewResult.setText(String.format("%.2f", result));
@@ -41,13 +44,17 @@ public class BMIActivity extends AppCompatActivity {
 
     private void fillNote(double result) {
         if (result < 18.5) {
-            textViewNote.setText("You are underweight, please think about your treatment....");
+            textViewNote.setText(R.string.underweight_note);
+            imageResult.setImageResource(R.drawable.doctor);
         } else if (result > 18.5 && result < 24.5) {
-            textViewNote.setText("You are normal, keep going♥");
+            textViewNote.setText(R.string.normal_note);
+            imageResult.setImageResource(R.drawable.normal);
         } else if (result > 25 && result < 29.9) {
-            textViewNote.setText("You are overweight, it is better to start exercising!");
+            textViewNote.setText(R.string.overweight_note);
+            imageResult.setImageResource(R.drawable.fat);
         } else {
-            textViewNote.setText("You are very overweight, you need to see a doctor or start a diet.");
+            textViewNote.setText(R.string.fat_note);
+            imageResult.setImageResource(R.drawable.overweight);
         }
     }
 
