@@ -48,7 +48,7 @@
         android:background="@drawable/shape_two"
         android:fontFamily="@font/number4"
         android:gravity="center_vertical"
-        android:text="    please enter your Weight"
+        android:text="@string/please_enter_your_weight"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
