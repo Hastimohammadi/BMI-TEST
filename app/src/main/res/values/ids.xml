@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_margin">20dp</dimen>
+    <dimen name="text_size_2">23sp</dimen>
+    <dimen name="padding">7dp</dimen>
+    <dimen name="image_height">200dp</dimen>
+    <dimen name="edittext_margin">16dp</dimen>
+    <dimen name="edittext_size">15sp</dimen>
+    <dimen name="edittext_padding">20dp</dimen>
+    <dimen name="button_calculate_bmi" type="id">button calculate bmi</dimen>
+    <dimen name="edittext_weight" type="id">edittext weight</dimen>
+    <dimen name="edittext_height" type="id">edittext height</dimen>
+    <dimen name="textview_result" type="id">textview result</dimen>
+</resources>

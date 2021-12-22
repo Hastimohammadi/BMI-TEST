@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".m">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bmi_counter"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:padding="@dimen/edittext_padding"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edittext_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textview_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginEnd="@dimen/edittext_margin"
+        android:layout_marginStart="@dimen/edittext_margin"
+        android:layout_marginTop="@dimen/edittext_margin"
+        android:hint="@string/enter_your_height"
+        android:textColor="@color/black"
+        android:padding="@dimen/edittext_padding"
+        android:textSize="@dimen/edittext_size"
+        android:background="@drawable/edittext_shape"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edittext_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edittext_height"
+        android:layout_marginEnd="@dimen/edittext_margin"
+        android:layout_marginStart="@dimen/edittext_margin"
+        android:layout_marginTop="@dimen/edittext_margin"
+        android:hint="@string/enter_your_weight"
+        android:textColor="@color/black"
+        android:padding="@dimen/edittext_padding"
+        android:textSize="@dimen/edittext_size"
+        android:background="@drawable/edittext_shape"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_calculate_bmi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edittext_weight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/edittext_margin"
+        android:background="@drawable/button_shape"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:text="@string/calculate"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="@string/bmi_counter"
+        android:gravity="center"
+        android:textColor="@color/purple_200"
+        android:padding="@dimen/edittext_padding"
+        android:textSize="20sp"
+        android:layout_marginTop="@dimen/edittext_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_calculate_bmi"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="@string/bmi_counter"
+        android:gravity="start"
+        android:textColor="@color/black"
+        android:padding="@dimen/edittext_padding"
+        android:textSize="15sp"
+        android:layout_marginTop="@dimen/edittext_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_result"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/yellow"
+    android:layout_height="match_parent"
+    tools:context=".BMIActivity">
+
+
+
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="406dp"
+        android:layout_height="140dp"
+        android:fontFamily="@font/number3"
+        android:gravity="center"
+        android:text="@string/bmi_test"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="371dp"
+        android:layout_height="70dp"
+        android:background="@drawable/shape_one"
+        android:fontFamily="@font/number4"
+        android:gravity="center_vertical"
+        android:paddingStart="20sp"
+        android:paddingEnd="20sp"
+        android:text="@string/please_enter_your_height"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="140dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="359dp"
+        android:layout_height="74dp"
+        android:background="@drawable/shape_two"
+        android:fontFamily="@font/number4"
+        android:gravity="center_vertical"
+        android:text="    please enter your Weight"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="246dp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="317dp"
+        android:layout_height="91dp"
+        android:background="@drawable/shape_three"
+        android:fontFamily="@font/number2"
+        android:gravity="center_vertical"
+        android:text="     calculate BMI"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="591dp" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_note"
+        android:layout_width="174dp"
+        android:layout_height="52dp"
+        android:fontFamily="@font/number1"
+        android:gravity="center_vertical"
+        android:text="@string/bmi_counter"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="375dp"
+        tools:ignore="MissingConstraints" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
