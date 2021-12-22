@@ -1,4 +1,4 @@
-package com.example.schoolproject;
+package com.hastmohamadi.bmiTest;
 
 import android.os.Bundle;
 import android.widget.Toast;

@@ -5,9 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/yellow"
-    tools:context=".First_page">
-
-
+    >
 
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -32,7 +30,7 @@
         android:text="@string/are_you_ready_for_bmi_test"
         android:textColor="@color/black"
         android:textSize="35sp"
-        android:fontFamily="@font/number1"
+        android:fontFamily="@font/roboto_black"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="6dp"
@@ -43,7 +41,7 @@
         android:layout_width="284dp"
         android:layout_height="51dp"
         android:background="@drawable/shape_two"
-        android:fontFamily="@font/number3"
+        android:fontFamily="@font/roboto_extra_bold"
         android:gravity="center"
         android:text="@string/no_thanks"
         android:textColor="@color/black"
@@ -57,7 +55,7 @@
         android:layout_width="284dp"
         android:layout_height="51dp"
         android:background="@drawable/shape_one"
-        android:fontFamily="@font/number3"
+        android:fontFamily="@font/roboto_extra_bold"
         android:gravity="center"
         android:text="@string/yes_i_am_ready"
         android:textColor="@color/black"

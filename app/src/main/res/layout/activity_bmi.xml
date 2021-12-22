@@ -7,15 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".BMIActivity">
 
-
-
-
-
-
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="406dp"
         android:layout_height="140dp"
-        android:fontFamily="@font/number3"
+        android:fontFamily="@font/roboto_extra_bold"
         android:gravity="center"
         android:text="@string/bmi_test"
         android:textColor="@color/black"
@@ -25,11 +20,11 @@
         tools:layout_editor_absoluteY="0dp" />
 
 
-    <androidx.appcompat.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatEditText
         android:layout_width="371dp"
         android:layout_height="70dp"
         android:background="@drawable/shape_one"
-        android:fontFamily="@font/number4"
+        android:fontFamily="@font/roboto_bold"
         android:gravity="center_vertical"
         android:paddingStart="20sp"
         android:paddingEnd="20sp"
@@ -42,11 +37,11 @@
         tools:ignore="MissingConstraints" />
 
 
-    <androidx.appcompat.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatEditText
         android:layout_width="359dp"
         android:layout_height="74dp"
         android:background="@drawable/shape_two"
-        android:fontFamily="@font/number4"
+        android:fontFamily="@font/roboto_bold"
         android:gravity="center_vertical"
         android:text="@string/please_enter_your_weight"
         android:textColor="@color/black"
@@ -61,7 +56,7 @@
         android:layout_width="317dp"
         android:layout_height="91dp"
         android:background="@drawable/shape_three"
-        android:fontFamily="@font/number2"
+        android:fontFamily="@font/roboto_bold"
         android:gravity="center_vertical"
         android:text="     calculate BMI"
         android:textColor="@color/black"
@@ -76,7 +71,7 @@
         android:id="@+id/textview_note"
         android:layout_width="174dp"
         android:layout_height="52dp"
-        android:fontFamily="@font/number1"
+        android:fontFamily="@font/roboto_black"
         android:gravity="center_vertical"
         android:text="@string/bmi_counter"
         android:textColor="@color/black"
