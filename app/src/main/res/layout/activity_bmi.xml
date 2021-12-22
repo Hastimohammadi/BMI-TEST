@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".BMIActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_extra_bold"
+        android:gravity="center"
+        android:text="@string/bmi_test"
+        android:textColor="#170202"
+        android:textSize="38sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edittext_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/button_margin"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="@dimen/button_margin"
+        android:background="@drawable/shape_one"
+        android:fontFamily="@font/roboto_black"
+        android:gravity="center_vertical"
+        android:hint="@string/please_enter_your_height"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/ediText_padding"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textview_normal"
+        app:layout_constraintTop_toBottomOf="@id/textview_title" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edittext_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/button_margin"
+        android:layout_marginTop="@dimen/button_margin"
+        android:layout_marginEnd="@dimen/button_margin"
+        android:background="@drawable/shape_two"
+        android:fontFamily="@font/roboto_black"
+        android:gravity="center_vertical"
+        android:hint="@string/please_enter_your_weight"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/ediText_padding"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textview_normal"
+        app:layout_constraintTop_toBottomOf="@id/edittext_height" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_calculate_bmi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/button_margin"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="@dimen/button_margin"
+        android:background="@drawable/shape_three"
+        android:fontFamily="@font/roboto_black"
+        android:gravity="center"
+        android:text="@string/calculate_bmi"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_large_size"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/edittext_weight" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/button_margin"
+        android:fontFamily="@font/roboto_black"
+        android:gravity="center"
+        android:textColor="@color/black_gray"
+        android:textSize="@dimen/text_large_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_calculate_bmi"
+        tools:text="@string/bmi_counter" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/roboto_black"
+        android:gravity="center"
+        android:textColor="@color/black_light"
+        android:textSize="@dimen/textview_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_result"
+        tools:text="@string/bmi_counter" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_result"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@id/textview_note"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/button_margin"
+       tools:srcCompat="@drawable/ic_logo"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

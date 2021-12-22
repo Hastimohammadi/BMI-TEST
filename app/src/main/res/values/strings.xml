@@ -3,13 +3,18 @@
     <string name="bmi_app">BMI APP</string>
     <string name="result">Result</string>
     <string name="BMI">13851387</string>
-    <string name="are_you_ready_for_bmi_test" translatable="false">ARE YOU READY FOR BMI TEST?</string>
+    <string name="are_you_ready_for_bmi_test">ARE YOU READY FOR BMI TEST?</string>
     <string name="yes_i_am_ready">YES  I am READY</string>
     <string name="no_thanks">NO  THANKS</string>
     <string name="bmi_test">BMI TEST</string>
     <string name="please_enter_your_height">please enter your Height</string>
     <string name="bmi_counter">BMI COUNTER</string>
-    <string name="result_bmi">\"Your Bmi is: \"</string>
+    <string name="result_bmi">"Your Bmi is:"</string>
     <string name="please_enter_your_weight">please enter your Weight</string>
-    <string name="please_enter_your_weight">please enter your Weight</string>
+    <string name="calculate_bmi">calculate BMI</string>
+    <string name="underweight_note">You are underweight, please think about your treatment....</string>
+    <string name="normal_note">You are normal, keep going♥</string>
+    <string name="overweight_note">You are overweight, it is better to start exercising!</string>
+    <string name="fat_note">You are very overweight, you need to see a doctor or start a diet.</string>
+    <string name="populate_feilds">Populate Weight and Height to Calculate BMI</string>
 </resources>
