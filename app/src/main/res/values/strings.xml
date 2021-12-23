@@ -9,12 +9,12 @@
     <string name="bmi_test">BMI TEST</string>
     <string name="please_enter_your_height">please enter your Height</string>
     <string name="bmi_counter">BMI COUNTER</string>
-    <string name="please_enter_your_weight">please_enter_your_weight</string>
+    <string name="please_enter_your_weight">please enter your weight</string>
     <string name="calculate_bmi">calculate_bmi</string>
     <string name="underweight_note">underweight_note</string>
     <string name="normal_note">normal_note</string>
     <string name="overweight_note">overweight_note</string>
-    <string name="fat_note">fat_note</string>
+    <string name="fat_note">over</string>
     <string name="fat">fat</string>
     <string name="populate">populate</string>
 </resources>

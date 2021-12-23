@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="button_margin">button margin</dimen>
-    <dimen name="ediText_padding">editText padding</dimen>
-    <dimen name="textview_normal">textview normal</dimen>
-    <dimen name="text_large_size">text_large_size</dimen>
-    <dimen name="padding">padding</dimen>
+    <dimen name="button_margin">24dp</dimen>
+    <dimen name="ediText_padding">20dp</dimen>
+    <dimen name="text_size_2">23dp</dimen>
+    <dimen name="image_height">200dp</dimen>
+    <dimen name="editText_margin">16dp</dimen>
+    <dimen name="editText_size">15sp</dimen>
+    <dimen name="editText_padding">20dp</dimen>
+    <dimen name="textview_normal">20sp</dimen>
+    <dimen name="text_large_size">24sp</dimen>
+    <dimen name="button_shape">8dp</dimen>
+    <dimen name="padding">8dp</dimen>
 </resources>

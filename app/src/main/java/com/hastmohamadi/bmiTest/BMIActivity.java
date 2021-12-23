@@ -50,16 +50,16 @@ public class BMIActivity extends AppCompatActivity {
     private void fillNote(double result) {
         if (result < 18.5) {
             textViewNote.setText(R.string.underweight_note);
-            imageResult.setImageResource(R.drawable.doctor);
+            imageResult.setImageResource(R.drawable.underweight);
         } else if (result > 18.5 && result < 24.5) {
             textViewNote.setText(R.string.normal_note);
-            imageResult.setImageResource(R.drawable.normal);
+            imageResult.setImageResource(R.drawable.normal_note);
         } else if (result > 25 && result < 29.9) {
             textViewNote.setText(R.string.overweight_note);
-            imageResult.setImageResource(R.drawable.gym);
+            imageResult.setImageResource(R.drawable.overweight_note);
         } else {
             textViewNote.setText(R.string.fat_note);
-            imageResult.setImageResource(R.drawable.fat);
+            imageResult.setImageResource(R.drawable.fat_note);
 
         }
     }
