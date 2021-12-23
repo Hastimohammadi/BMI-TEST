@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_margin">button margin</dimen>
+    <dimen name="ediText_padding">editText padding</dimen>
+    <dimen name="textview_normal">textview normal</dimen>
+    <dimen name="text_large_size">text_large_size</dimen>
+    <dimen name="padding">padding</dimen>
+</resources>

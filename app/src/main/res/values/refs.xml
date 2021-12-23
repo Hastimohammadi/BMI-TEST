@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="normal">normal</drawable>
+    <drawable name="gym">gym</drawable>
+    <drawable name="doctor">doctor</drawable>
+    <drawable name="fat">fat</drawable>
+</resources>
