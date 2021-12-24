@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="button_margin">24dp</dimen>
+    <dimen name="button_margin">20dp</dimen>
     <dimen name="ediText_padding">20dp</dimen>
     <dimen name="text_size_2">23dp</dimen>
     <dimen name="image_height">200dp</dimen>

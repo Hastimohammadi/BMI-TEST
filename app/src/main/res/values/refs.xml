@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <drawable name="normal_note">normal_part</drawable>
-    <drawable name="overweight_note">gym_part</drawable>
-    <drawable name="underweight">under</drawable>
-    <drawable name="fat_note">over</drawable>
-</resources>
