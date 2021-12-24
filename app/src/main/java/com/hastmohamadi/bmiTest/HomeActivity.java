@@ -8,6 +8,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
+import com.bmiTest.R;
+
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
 
     private AppCompatButton buttonReady, buttonDissmiss;
